@@ -10,7 +10,6 @@ set cindent
 set expandtab
 set guioptions-=m
 set guioptions-=T
-set nobackup
 set noswapfile
 set linespace=4
 set hlsearch
@@ -79,6 +78,8 @@ let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 inoremap <expr><C-g>  neocomplete#undo_completion()
 inoremap <expr><C-l>  neocomplete#complete_common_string()
 
-gui
-colorscheme zenburn
-syntax on
+if has("gui")
+  gui
+  syntax on
+  colorscheme zenburn
+endif
