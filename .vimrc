@@ -4,7 +4,9 @@ au BufNewFile,BufRead *.gm   setf javascript
 set nu
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set nobackup
+set noundofile
 set autoindent
 set cindent
 set expandtab
@@ -26,7 +28,8 @@ endif
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/vimproc'
@@ -39,7 +42,7 @@ NeoBundle 'mattn/emmet-vim'
 
 NeoBundle 'vim-scripts/Zenburn'
 NeoBundle 'jnwhiteh/vim-golang'
-NeoBundle 'vim-scripts/Dart.git'
+NeoBundle 'dart-lang/dart-vim-plugin'
 
 " Unite
 noremap <C-U><C-B> :Unite buffer<CR>
