@@ -41,6 +41,7 @@ NeoBundle 'taglist.vim'
 NeoBundle 'mattn/emmet-vim'
 
 NeoBundle 'vim-scripts/Zenburn'
+NeoBundle 'tomasr/molokai'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'dart-lang/dart-vim-plugin'
 
@@ -84,5 +85,5 @@ inoremap <expr><C-l>  neocomplete#complete_common_string()
 if has("gui")
   gui
   syntax on
-  colorscheme zenburn
+  colorscheme molokai
 endif
