@@ -15,6 +15,7 @@ set guioptions-=T
 set noswapfile
 set linespace=4
 set hlsearch
+set autochdir
 
 set nocompatible
 filetype plugin indent off
@@ -27,28 +28,34 @@ endif
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/vimproc'
-
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'taglist.vim'
 NeoBundle 'mattn/emmet-vim'
-
+NeoBundle 'basyura/TweetVim'
+NeoBundle 'basyura/twibill.vim'
+NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'vim-scripts/Zenburn'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'dart-lang/dart-vim-plugin'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 't9md/vim-choosewin'
 
 " Unite
 noremap <C-U><C-B> :Unite buffer<CR>
 noremap <C-U><C-F> :UniteWithBufferDir -buffer-name=files file<CR>
 noremap <C-U><C-R> :Unite file_mru<CR>
 noremap <C-U><C-Y> :Unite -buffer-name=register register<CR>
+noremap <C-U><C-O> :Unite outline<CR>
 
 " NeoSnippet
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -81,8 +88,16 @@ let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 inoremap <expr><C-g>  neocomplete#undo_completion()
 inoremap <expr><C-l>  neocomplete#complete_common_string()
 
+" TweetVim
+let g:tweetvim_display_icon = 1
+
+" ChooseWin
+nmap - <Plug>(choosewin)
+let g:choosewin_overlay_enable = 1
+let g:choosewin_overlay_clear_multibyte = 1
+
 if has("gui")
   gui
-  syntax on
-  colorscheme zenburn
 endif
+syntax on
+colorscheme zenburn
