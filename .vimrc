@@ -47,6 +47,7 @@ NeoBundle 'basyura/TweetVim'
 NeoBundle 'basyura/twibill.vim'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'vim-scripts/Zenburn'
+NeoBundle 'tomasr/molokai'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'dart-lang/dart-vim-plugin'
 NeoBundle 'thinca/vim-quickrun'
@@ -103,4 +104,4 @@ if has("gui")
   gui
 endif
 syntax on
-colorscheme zenburn
+colorscheme molokai
