@@ -16,6 +16,7 @@ set noswapfile
 set linespace=4
 set hlsearch
 set autochdir
+set tw=0
 
 set nocompatible
 filetype plugin indent off
