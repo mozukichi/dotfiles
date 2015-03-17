@@ -58,6 +58,7 @@ typeset -U path cdpath fpath manpath
 
 path=(
     $HOME/bin(N-/)
+    /usr/local/git/bin
     /usr/local/bin(N-/)
     /usr/local/sbin(N-/)
     ~/android-sdk/platform-tools(N-/)
@@ -158,6 +159,7 @@ function title {
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+<<<<<<< HEAD
 # -----
 # pub
 # -----
@@ -168,13 +170,21 @@ export PATH=~/.pub-cache/bin:$PATH
 # -----
 export ANDROID_HOME=~/android-sdk
 
-# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/zukkun/cocos2d-js-v3.2-rc0/tools/cocos2d-console/bin
-export PATH=$COCOS_CONSOLE_ROOT:$PATH
-
 # Add environment variable ANT_ROOT for cocos2d-x
 export ANT_ROOT=/usr/local/bin
 export PATH=$ANT_ROOT:$PATH
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Users/miyanishik/cocos2d-x-3.3/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT=/Users/miyanishik/cocos2d-x-3.3
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT=/Users/miyanishik/cocos2d-x-3.3/templates
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 # Nim
 export PATH=~/.nimble/bin:$PATH

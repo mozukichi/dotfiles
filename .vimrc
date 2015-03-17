@@ -1,6 +1,9 @@
 " GameScript
 au BufNewFile,BufRead *.gm   setf javascript
 
+" Markdown
+au BufNewFile,BufRead *.md   setf markdown
+
 set nu
 set tabstop=4
 set shiftwidth=4
@@ -54,6 +57,7 @@ NeoBundle 'dart-lang/dart-vim-plugin'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 't9md/vim-choosewin'
+NeoBundle 'greyblake/vim-preview'
 
 " Unite
 noremap <C-U><C-B> :Unite buffer<CR>
