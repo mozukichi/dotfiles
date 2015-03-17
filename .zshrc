@@ -60,6 +60,7 @@ path=(
     $HOME/bin(N-/)
     /usr/local/bin(N-/)
     /usr/local/sbin(N-/)
+    ~/android-sdk/platform-tools(N-/)
     $path
 )
 
@@ -156,3 +157,24 @@ function title {
 # -----
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# -----
+# pub
+# -----
+export PATH=~/.pub-cache/bin:$PATH
+
+# -----
+# Android
+# -----
+export ANDROID_HOME=~/android-sdk
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Users/zukkun/cocos2d-js-v3.2-rc0/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable ANT_ROOT for cocos2d-x
+export ANT_ROOT=/usr/local/bin
+export PATH=$ANT_ROOT:$PATH
+
+# Nim
+export PATH=~/.nimble/bin:$PATH
