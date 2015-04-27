@@ -22,7 +22,7 @@ set autochdir
 set tw=0
 
 set nocompatible
-filetype plugin indent off
+filetype plugin indent on
 
 " 保存時に行末スペースを削除
 autocmd BufWritePre * :%s/\s\+$//ge
@@ -58,6 +58,8 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 't9md/vim-choosewin'
 NeoBundle 'greyblake/vim-preview'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-endwise'
 
 " Unite
 noremap <C-U><C-B> :Unite buffer<CR>
