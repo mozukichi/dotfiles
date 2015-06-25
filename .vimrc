@@ -111,4 +111,5 @@ if has("gui")
   gui
 endif
 syntax on
+let g:molokai_original = 1
 colorscheme molokai
