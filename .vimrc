@@ -60,6 +60,7 @@ NeoBundle 't9md/vim-choosewin'
 NeoBundle 'greyblake/vim-preview'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'elzr/vim-json'
 
 " Unite
 noremap <C-U><C-B> :Unite buffer<CR>
@@ -106,6 +107,9 @@ let g:tweetvim_display_icon = 1
 nmap - <Plug>(choosewin)
 let g:choosewin_overlay_enable = 1
 let g:choosewin_overlay_clear_multibyte = 1
+
+" vim-json
+let g:vim_json_syntax_conceal = 0
 
 if has("gui")
   gui
